@@ -33,9 +33,7 @@ body {
 
 p:hover {
     color: #fff;
-    position: absolute;
-    left: 50;
-    top: 50;
+    position: relative;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
