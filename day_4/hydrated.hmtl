@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
     <title>index</title>
 </head>
 
-<body id="days">
+<body>
     <div>
         <table>
             <tr>
@@ -29,27 +30,6 @@
                 <td>
                     <a href="/day_1_2/exercise_1_2.html">mark II</a>
                 </td>
-            </tr>
-            <tr>
-                <td>
-                    day 2
-                    <td>
-                        <a href="">mark I</a>
-                    </td>
-            </tr>
-            <tr>
-                <td>
-                    day 3
-                    <td>
-                        <a href="">mark I</a>
-                    </td>
-            </tr>
-            <tr>
-                <td>
-                    day 4
-                    <td>
-                        <a href="/day_4/hydrated.hmtl">mark I</a>
-                    </td>
             </tr>
         </table>
     </div>

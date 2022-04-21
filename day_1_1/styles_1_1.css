@@ -1,8 +1,8 @@
 body {
+    overflow: hidden;
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
-    padding: 2em;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -20,9 +20,11 @@ body {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     text-align: left;
+    padding: 4em;
 }
 
 #words p {
+    text-decoration: line-through;
     margin: 0.1em 0;
     font-family: 'Playfair Display', serif;
     font-size: 0.5em;
@@ -35,8 +37,9 @@ body {
 }
 
 #words p:hover {
+    text-decoration: none;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 50%;
     color: #fff;
     font-size: 3em;

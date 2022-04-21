@@ -9,9 +9,9 @@ body {
     overflow: hidden;
 }
 
-td {
+#days td {
     color: #fff;
-    padding: 0.2em 1em;
+    padding: 0.4em 1em;
     text-transform: uppercase;
     letter-spacing: 0.4em;
 }
