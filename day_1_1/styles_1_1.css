@@ -39,7 +39,7 @@ body {
 #words p:hover {
     text-decoration: none;
     position: absolute;
-    left: 60%;
+    left: 50%;
     top: 50%;
     color: #fff;
     font-size: 3em;
