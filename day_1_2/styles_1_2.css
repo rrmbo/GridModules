@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #000;*/
+}
+
+#words {
+    margin: 0 40px;
+    /*-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);*/
+    transform: rotate(-90deg);
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+#words p {
+    margin: 1em 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #000;
+}
+
+.station {
+    color: #ff0000;
+}
+
+p:hover {
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
