@@ -1,0 +1,13 @@
+.vessel {
+    max-width: 100px;
+    margin: 20px;
+}
+
+.vessel:hover,
+.vessel:focus {
+    transform: rotate(10deg);
+}
+
+.vessel-row {
+    vertical-align: bottom;
+}

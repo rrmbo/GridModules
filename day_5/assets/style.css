@@ -1,0 +1,117 @@
+/*  GENERAL   */
+
+a {
+    color: #fff;
+}
+
+body {
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/*  MONDAY   */
+
+body#body-monday {
+    background-color: #237;
+}
+
+
+/*  TUESDAY   */
+
+#words {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    text-align: left;
+    padding: 4em;
+}
+
+#words p {
+    text-decoration: line-through;
+    margin: 0.1em 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.5em;
+    color: #666;
+}
+
+#words p.station,
+#words p.station:hover {
+    color: #ffcdcd;
+}
+
+#words p:hover {
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 3em;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/*  WEDNESDAY   */
+
+body#body-wednesday {
+    background-color: unset;
+}
+
+.vessel {
+    max-width: 100px;
+    margin: 20px;
+}
+
+.vessel:hover,
+.vessel:focus {
+    transform: rotate(10deg);
+}
+
+.vessel-row {
+    vertical-align: bottom;
+}
+
+
+/*  THURSDAY   */
+
+body#body-thursday {
+    background-color: #891;
+}
+
+
+/*  FRIDAY   */
+
+body#body-friday {
+    background-color: #819;
+}
+
+
+/*  SATURDAY   */
+
+body#body-saturday {
+    background-color: #192;
+}
+
+
+/*  SUNDAY   */
+
+body#body-sunday {
+    background-color: #088;
+}
