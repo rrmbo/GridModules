@@ -214,9 +214,29 @@ body#body-wednesday {
     margin: 20px;
 }
 
+.small-glass {
+    background-image: url(/assets/images/juice.svg);
+    background-size: 150%;
+    background-position-y: 60%;
+}
+
+.big-glass {
+    background-image: url(/assets/images/water.svg);
+    background-size: 300%;
+    background-position-y: 60%;
+}
+
+.bottle {
+    background-image: url(/assets/images/water.svg);
+    background-size: 300%;
+    background-position-y: 70%;
+}
+
 .vessel:hover,
 .vessel:focus {
     transform: rotate(10deg);
+    background-position-y: 0%;
+    transition: ease-out 0.5s;
 }
 
 .vessel-row {
