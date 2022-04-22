@@ -9,7 +9,6 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,6 +80,10 @@ body {
     height: 100vh;
 }
 
+.uni-img {
+    max-width: 100vw;
+}
+
 #monday {
     top: 0;
     left: 0;
@@ -97,6 +100,10 @@ body {
 }
 
 #thursday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
     top: 0;
     left: 300vw;
 }
@@ -180,6 +187,13 @@ body#body-monday {
 /*  WEDNESDAY   */
 
 body#body-wednesday {
+    background-color: #192;
+}
+
+
+/*  THURSDAY   */
+
+body#body-wednesday {
     background-color: unset;
 }
 
@@ -203,10 +217,6 @@ body#body-wednesday {
 
 
 /*  THURSDAY   */
-
-body#body-thursday {
-    background-color: #891;
-}
 
 
 /*  FRIDAY   */
