@@ -17,6 +17,33 @@ body {
 }
 
 
+/*  MENU   */
+
+#day-menu {
+    position: absolute;
+    left: 30px;
+}
+
+#day-menu a {
+    margin: 0.5em 0;
+    display: block;
+    min-width: 100%;
+    text-transform: uppercase;
+}
+
+#day-menu a:link,
+#day-menu a:visited,
+#day-menu a:active {
+    text-decoration: line-through;
+}
+
+#day-menu a:hover,
+#day-menu a:focus {
+    color: #ffcdcd;
+    text-decoration: none;
+}
+
+
 /*  MONDAY   */
 
 body#body-monday {
@@ -86,6 +113,10 @@ body#body-wednesday {
 
 .vessel-row {
     vertical-align: bottom;
+}
+
+.drink-event {
+    display: inline-block;
 }
 
 
