@@ -40,7 +40,7 @@ body {
 
 #day-menu a:hover,
 #day-menu a:focus {
-    color: #ffcdcd;
+    color: #000;
     text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ body {
 
 #day-menu-2 a:hover,
 #day-menu-2 a:focus {
-    color: #ffcdcd;
+    color: #000;
     text-decoration: none;
 }
 
@@ -87,6 +87,11 @@ body {
 }
 
 #monday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9090;
     top: 0;
     left: 0;
 }
@@ -144,8 +149,36 @@ body#body-index {
 
 /*  MONDAY   */
 
-body#body-monday {
-    background-color: #237;
+p#wasted-bites {
+    width: 30vw;
+    margin: 1em;
+    text-align: center;
+}
+
+p#do-it {
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 30vw;
+    margin: 1em;
+    text-align: center;
+}
+
+a#dolfy {
+    display: block;
+    background-image: url(/assets/images/dolphin_o.png);
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 30vh;
+}
+
+a#dolfy:hover,
+a#dolfy:focus,
+a#dolfy:visited,
+a#dolfy:active {
+    cursor: url(/assets/images/knife.png), auto;
+    background-image: url(/assets/images/dolphin_x.png);
 }
 
 
@@ -176,7 +209,7 @@ body#body-monday {
 #words p.station,
 #words p.station:hover,
 #words p.station:focus {
-    color: #cd90ff;
+    color: #ff9090;
 }
 
 #words p:hover,
