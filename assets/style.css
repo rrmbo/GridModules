@@ -105,6 +105,10 @@ body {
 }
 
 #wednesday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #098;
     top: 0;
     left: 200vw;
@@ -150,15 +154,19 @@ body#body-index {
 /*  MONDAY   */
 
 p#wasted-bites {
-    width: 30vw;
+    width: 80vw;
+    max-width: 30vw;
     margin: 1em;
     text-align: center;
+    font-family: Verdana, sans-serif;
 }
 
 p#do-it {
+    font-family: Verdana, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    width: 30vw;
+    width: 80vw;
+    max-width: 30vw;
     margin: 1em;
     text-align: center;
 }
@@ -235,6 +243,27 @@ body#body-wednesday {
     background-color: #192;
 }
 
+a#exibit {
+    display: block;
+    background-image: url(/assets/images/exhibition.png);
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 40vh;
+    transition: ease-out 0.5s;
+}
+
+a#exibit:hover,
+a#exibit:focus,
+a#exibit:visited,
+a#exibit:active {
+    cursor: help;
+    width: 61vw;
+    height: 41vh;
+    transition: ease-out 0.5s;
+}
+
 
 /*  THURSDAY   */
 
@@ -280,8 +309,9 @@ body#body-wednesday {
     display: inline-block;
 }
 
-
-/*  THURSDAY   */
+.drink-data {
+    padding-left: 2em;
+}
 
 
 /*  FRIDAY   */
