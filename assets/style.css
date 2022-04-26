@@ -38,6 +38,11 @@ body {
     margin: 1em;
 }
 
+.w-10 {
+    max-width: 10em;
+    margin: 1em;
+}
+
 
 /*  MENU 2  */
 
@@ -350,7 +355,38 @@ div#saturday p {
 /*  SUNDAY   */
 
 #sunday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #912;
     top: 0;
     left: 600vw;
+}
+
+.filet {
+    width: 40%;
+    height: 60%;
+    background-image: url(/assets/images/filet_closed.png);
+    background-position: bottom;
+    background-size: 98%;
+    background-repeat: no-repeat;
+    transition: ease-out 0.1s;
+    z-index: 900;
+}
+
+.filet:hover,
+.filet:focus,
+.filet:visited,
+.filet:active {
+    background-image: url(/assets/images/filet_open.png);
+    transition: ease-out 0.1s;
+    background-size: 100%;
+    cursor: url(/assets/images/mhhh.png), auto;
+}
+
+.order {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    transform: rotate(-6deg);
 }
