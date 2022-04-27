@@ -1,0 +1,43 @@
+body {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 1rem;
+    margin: 0;
+    transform: rotate(180deg);
+}
+
+.row-element {
+    display: block;
+    width: 20vw;
+    height: 100vh;
+}
+
+.map {
+    width: 90%;
+    margin: 1.2rem;
+}
+
+.map:hover,
+.map:focus {
+    transform: scale(4) rotate(90deg);
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.8em;
+}
