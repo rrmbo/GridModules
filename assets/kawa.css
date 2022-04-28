@@ -2,16 +2,11 @@ body {
     background-color: #000;
     color: #fff;
     overflow: hidden;
-    display: flex;
-    justify-content: left;
     font-family: 'Playfair Display', serif;
 }
 
 h1 {
     writing-mode: vertical-rl;
-    position: absolute;
-    top: 0;
-    left: 0;
     font-family: Verdana, sans-serif;
     text-transform: uppercase;
     text-align: right;
@@ -20,20 +15,24 @@ h1 {
     transform: rotate(180deg);
 }
 
-.row-element {
-    display: block;
-    width: 20vw;
-    height: 100vh;
+#row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-item {
+    padding: 1rem;
 }
 
 .map {
-    width: 90%;
-    margin: 1.2rem;
+    padding: 1rem;
+    width: 30vw;
+    flex-grow: 1;
 }
 
 .map:hover,
 .map:focus {
-    transform: scale(4) rotate(90deg);
+    transform: scale(1.2) rotate(90deg);
 }
 
 p {

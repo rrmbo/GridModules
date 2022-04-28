@@ -1,0 +1,53 @@
+:root {
+    --background: #fff;
+    --black: #000;
+    --red: #f00;
+    --blue: #00f;
+    --green: #595;
+    --yellow: #f90;
+    --navy: #239;
+    --olive: #983;
+    --violet: #948;
+    --oil: #234;
+    --british: #350;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.flex-item {
+    align-self: flex-end;
+    background-color: var(--background);
+    width: 21vw;
+    flex-wrap: 1;
+    padding: 1rem;
+}
+
+.type {
+    text-transform: uppercase;
+    font-weight: 700;
+    font
+}
+
+.crab {
+    width: 100%;
+    height: auto;
+}
