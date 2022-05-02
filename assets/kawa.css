@@ -15,6 +15,12 @@ h1 {
     transform: rotate(180deg);
 }
 
+p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+
 #row {
     display: flex;
     justify-content: space-between;
@@ -22,21 +28,32 @@ h1 {
 
 .row-item {
     padding: 1rem;
-}
-
-.map {
-    padding: 1rem;
-    width: 30vw;
     flex-grow: 1;
 }
 
-.map:hover,
-.map:focus {
-    transform: scale(1.2) rotate(90deg);
+.work {
+    padding: 1rem;
 }
 
-p {
-    margin: 0;
-    padding: 1rem;
-    font-size: 0.8em;
+.map {
+    max-height: 90vh;
+    position: relative;
+    left: 0;
+    top: -50%;
+}
+
+.marks {
+    max-height: 90vh;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.marks:hover,
+.marks:focus {
+    opacity: 1;
+    transition: ease-out 0.5s;
 }
