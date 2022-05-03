@@ -46,7 +46,7 @@ p {
 }
 
 .map {
-    max-height: 90vh;
+    max-height: 80vh;
     position: relative;
     offset-position: ;
     left: 0;
@@ -54,7 +54,7 @@ p {
 }
 
 .marks {
-    max-height: 90vh;
+    max-height: 80vh;
     position: relative;
     z-index: 900;
     opacity: 0;
