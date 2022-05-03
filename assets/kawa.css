@@ -4,7 +4,7 @@ body {
     width: 100vw;
     color: #000;
     overflow: hidden;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oxygen Mono', monospace;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 p {
     margin: 0;
     font-size: 0.9em;
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
 
 #row {
