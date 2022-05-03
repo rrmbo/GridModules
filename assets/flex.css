@@ -18,6 +18,16 @@ h1 {
     max-width: 60%;
 }
 
+#triwa {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2em;
+    position: fixed;
+    left: 1em;
+    bottom: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
 body {
     display: flex;
     align-items: center;
@@ -32,7 +42,6 @@ body {
 
 .flex-container {
     width: 100vh;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
