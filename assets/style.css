@@ -45,12 +45,20 @@ body {
 }
 
 
-/*  MENU 2  */
+/*  MENU  */
 
 #day-menu {
     z-index: 999;
     position: fixed;
     left: 30px;
+}
+
+#day-menu div {
+    height: 0.1em;
+    width: 50%;
+    margin: 1em 0;
+    display: block;
+    background-color: #fff;
 }
 
 #day-menu a {

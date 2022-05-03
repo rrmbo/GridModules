@@ -10,7 +10,6 @@ h1 {
     font-family: Verdana, sans-serif;
     text-transform: uppercase;
     text-align: right;
-    padding: 1rem;
     margin: 0;
     transform: rotate(180deg);
     z-index: 999;
@@ -18,17 +17,23 @@ h1 {
 
 p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.3em;
 }
 
 #row {
     display: flex;
     justify-content: space-between;
+    padding: 1em;
 }
 
-.row-item {
+.row-item-1 {
     padding: 1rem;
+}
+
+.row-item-2 {
+    padding: 1rem;
+    flex-basis: 33%;
     flex-grow: 1;
 }
 
@@ -38,8 +43,8 @@ p {
 
 .map {
     max-height: 90vh;
-    max-height: 90vh;
     position: relative;
+    offset-position: ;
     left: 0;
     top: -50%;
 }
@@ -47,8 +52,6 @@ p {
 .marks {
     max-height: 90vh;
     position: relative;
-    left: 0;
-    top: 0;
     z-index: 900;
     opacity: 0;
     transition: ease-out 0.5s;
