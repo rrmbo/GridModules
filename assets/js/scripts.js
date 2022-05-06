@@ -19,45 +19,77 @@ if (window.addEventListener) {
     window.attachEvent("onmousewheel", scrollHorizontally);
 }
 
-// Rules
+let mon = document.getElementById('mon');
+let tue = document.getElementById('tue');
+let wed = document.getElementById('wed');
+let thu = document.getElementById('thu');
+let fri = document.getElementById('fri');
+let sat = document.getElementById('sat');
+let sun = document.getElementById('sun');
+let windowWidth = window.innerWidth;
 
-let n = 0;
-let matches = document.querySelectorAll("button");
-let firstbtn = matches[0];
-let secondbtn = matches[1];
+console.log(screenLeft)
 
-// Button-Functions
+let main = document.getElementsByTagName("main")[0];
+main.addEventListener("scroll", (event) => {
+    let scrollLeft = main.scrollLeft;
 
-firstbtn.addEventListener("click", newImage);
-secondbtn.addEventListener("click", newElement);
 
-function buttonPressed() {
-    n++;
-    document.getElementById("element").style.left = n + "em";
-}
-
-function newElement() {
-    let div = document.createElement("div");
-    div.classList.add('random')
-    div.style.left = Math.random() * window.innerWidth + "px";
-    div.style.top = Math.random() * window.innerHeight + "px";
-    document.body.appendChild(div);
-}
-
-/*function newImage() {
-    n++;
-    let diff = 4;
-    let myImage = new Image();
-    myImage.src = '/assets/images/dolphin_x.png';
-    myImage.classList.add('hole');
-    myImage.style.left = n * diff + "em";
-    document.body.appendChild(myImage);
-}*/
-function newImage() {
-    let myImage = new Image();
-    myImage.src = '/assets/images/dolphin_x.png';
-    myImage.classList.add('hole');
-    myImage.style.left = Math.random() * window.innerWidth + "px";
-    myImage.style.top = Math.random() * window.innerHeight + "px";
-    document.body.appendChild(myImage);
-}
+    if (scrollLeft < (0.5) * windowWidth) {
+        mon.classList.add('highlight');
+        tue.classList.remove('highlight')
+        wed.classList.remove('highlight')
+        thu.classList.remove('highlight')
+        fri.classList.remove('highlight')
+        sat.classList.remove('highlight')
+        sun.classList.remove('highlight')
+    } else if (scrollLeft < 1.5 * windowWidth) {
+        mon.classList.remove('highlight');
+        tue.classList.add('highlight')
+        wed.classList.remove('highlight')
+        thu.classList.remove('highlight')
+        fri.classList.remove('highlight')
+        sat.classList.remove('highlight')
+        sun.classList.remove('highlight')
+    } else if (scrollLeft < 2.5 * windowWidth) {
+        mon.classList.remove('highlight');
+        tue.classList.remove('highlight')
+        wed.classList.add('highlight')
+        thu.classList.remove('highlight')
+        fri.classList.remove('highlight')
+        sat.classList.remove('highlight')
+        sun.classList.remove('highlight')
+    } else if (scrollLeft < 3.5 * windowWidth) {
+        mon.classList.remove('highlight');
+        tue.classList.remove('highlight')
+        wed.classList.remove('highlight')
+        thu.classList.add('highlight')
+        fri.classList.remove('highlight')
+        sat.classList.remove('highlight')
+        sun.classList.remove('highlight')
+    } else if (scrollLeft < 4.5 * windowWidth) {
+        mon.classList.remove('highlight');
+        tue.classList.remove('highlight')
+        wed.classList.remove('highlight')
+        thu.classList.remove('highlight')
+        fri.classList.add('highlight')
+        sat.classList.remove('highlight')
+        sun.classList.remove('highlight')
+    } else if (scrollLeft < 5.5 * windowWidth) {
+        mon.classList.remove('highlight');
+        tue.classList.remove('highlight')
+        wed.classList.remove('highlight')
+        thu.classList.remove('highlight')
+        fri.classList.remove('highlight')
+        sat.classList.add('highlight')
+        sun.classList.remove('highlight')
+    } else {
+        mon.classList.remove('highlight');
+        tue.classList.remove('highlight')
+        wed.classList.remove('highlight')
+        thu.classList.remove('highlight')
+        fri.classList.remove('highlight')
+        sat.classList.remove('highlight')
+        sun.classList.add('highlight')
+    }
+});
