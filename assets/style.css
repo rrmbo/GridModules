@@ -209,8 +209,8 @@ body#body-wednesday {
 a#exibit {
     display: block;
     background-image: url(/assets/images/exhibition.png);
-    background-size: 100%;
-    background-position-y: center;
+    background-size: 99%;
+    background-position: center;
     background-repeat: no-repeat;
     width: 60%;
     max-width: 1000px;
@@ -222,9 +222,8 @@ a#exibit:hover,
 a#exibit:focus,
 a#exibit:visited,
 a#exibit:active {
+    background-size: 100%;
     cursor: help;
-    width: 61vw;
-    height: 41vh;
     transition: ease-out 0.5s;
 }
 

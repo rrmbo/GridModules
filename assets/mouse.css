@@ -1,0 +1,23 @@
+.pointer {
+    width: 10px;
+    height: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #00f;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+    border-radius: 1em;
+    border: none;
+    padding: 1em;
+    margin: 1em;
+}
