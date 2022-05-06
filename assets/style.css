@@ -6,7 +6,7 @@ a {
 
 body {
     background-color: #000;
-    overflow: hidden;
+    overflow-y: hidden;
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
     /*font-family: 'Playfair Display', serif;*/
 }
 
@@ -42,6 +43,18 @@ body {
 .w-10 {
     max-width: 10em;
     margin: 1em;
+}
+
+.day-block {
+    overflow-y: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.uni-img {
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -81,20 +94,6 @@ body {
 }
 
 
-/*  UNIVERSE    */
-
-.day-block {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
-.uni-img {
-    width: 100vw;
-    height: 100vh;
-}
-
-
 /*  INDEX   */
 
 body#body-index {
@@ -123,6 +122,7 @@ a#dolfy {
     background-position-y: center;
     background-repeat: no-repeat;
     width: 30vw;
+    max-width: 500px;
     height: 30vh;
 }
 
@@ -212,8 +212,9 @@ a#exibit {
     background-size: 100%;
     background-position-y: center;
     background-repeat: no-repeat;
-    width: 60vw;
-    height: 40vh;
+    width: 60%;
+    max-width: 1000px;
+    height: 40%;
     transition: ease-out 0.5s;
 }
 
@@ -316,7 +317,7 @@ body#body-wednesday {
     transition: ease-out 0.2s;
     background-position-x: 0;
     background-position-y: 0;
-    background-size: 9em;
+    background-size: 40%;
 }
 
 
@@ -374,6 +375,7 @@ div#saturday p {
 
 .filet {
     width: 40%;
+    max-width: 800px;
     height: 60%;
     background-image: url(/assets/images/filet_closed.png);
     background-position: bottom;
