@@ -1,9 +1,6 @@
 let history;
 let count = 0;
 
-// let ranX = random(window.innerWidth);
-// let ranY = random(window.innerHeight);
-
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight);
     let url = "history.json";
@@ -69,7 +66,7 @@ function draw() {
     let y2 = mouseY;
 
     let actHour = history[count].visitCount;
-    let ratioSize = sqrt(map(actHour, 0, 23, 0, 255))
+    let ratioSize = sqrt(map(actHour, 0, 23, 0, 255));
 
     textSize(ratioSize);
     background(255, 1);
@@ -79,7 +76,7 @@ function draw() {
     text(history[count].title, 0, -5);
     pop();
     count++;
-    if (count > Object.keys(history).length) {
+    if (count >= Object.keys(history).length) {
         count = 0;
     }
 }
